@@ -14,7 +14,7 @@
       <h2>Serving up cruelty-free vegan pizza since 2016.</h2>
       <h3>Check out our ingredient selector to customize your pizza before you order!</h3>
       <h3>Build Your Pizza</h3>
-      <form>
+      <form id="#pizza-choices">
         <!-- size selectors -->
         <h4>Choose your size:</h4>
         <div class="radio">
@@ -65,42 +65,42 @@
         <h4>Choose your toppings. $1 each.</h4>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="1">
+            <input type="checkbox" value="sausage">
             Seitan sausage
           </label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="1">
+            <input type="checkbox" value="mushroom">
             Mix of mushrooms (crimini, shitake, oyster)
           </label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="1">
+            <input type="checkbox" value="olives">
             Finely chopped olives
           </label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="1">
+            <input type="checkbox" value="artichoke">
             Artichoke hearts
           </label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="1">
+            <input type="checkbox" value="tomato">
             Roma tomatoes
           </label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="1">
+            <input type="checkbox" value="kale">
             Kale.
           </label>
         </div>
         <!-- submit button -->
-        <input class="btn btn-default btn-block" type="submit" value="Submit">
+        <button type="submit" class="btn btn-danger" id="submit-pizza">Find your pizza</button>
       </form>
       <!-- order output -->
       <div class="your-order">

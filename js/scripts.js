@@ -4,29 +4,39 @@
 var pizzaCost = 0;
 var size = "";
 var cheese = "";
-var toppings = [],
+var toppings = [];
+var yourPizza = {};
 
 //pizza constructor
-function Pizza(size, cheese, toppings) {
-  this.size = size;
+function Pizza(sizes, cheese, toppings) {
+  this.sizes = sizes;
   this.cheese = cheese;
   this.toppings = toppings;
 }
 
 //pizza prototype
 Pizza.prototype.toppingsSum = function(topping) {
-  yourPizza.topppings.forEach(function(topping) {
-    return pizzaCost +=
-  })
+  var totalToppings = this.toppings.length;
+  return pizzaCost + totalToppings;
+  // yourPizza.topppings.forEach(function(topping) {
+  //   return pizzaCost +=
+  // })
 }
+  //alternatively, get the length of the array, and add that value to pizza cost
 
 // user interface logic
 $(document).ready(function() {
-  $("form#pizza-choices").submit(function(event) {
-    size = $("input:radio[name=size]:checked").val();
-    cheese = $("input:radio[name=cheese]:checked").val();
-    toppings = $("input:checkbox:checked").map(function() {
+  $("form").submit(function(event) {
+    event.preventDefault();
+
+    userSize = $("input:radio[name=size]:checked").val();
+    userCheese = $("input:radio[name=cheese]:checked").val();
+    userToppings = $("input:checkbox:checked").map(function() {
       return this.value;
     }).get();
+
+    var yourPizza = new Pizza(userSize, userCheese, userToppings);
+
+
   });
 });
