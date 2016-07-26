@@ -17,26 +17,25 @@ function Pizza(sizes, cheese, toppings) {
 //pizza prototype
 Pizza.prototype.toppingsSum = function(topping) {
   var totalToppings = this.toppings.length;
-  return pizzaCost + totalToppings;
-  // yourPizza.topppings.forEach(function(topping) {
-  //   return pizzaCost +=
-  // })
+  return pizzaCost += totalToppings;
 }
-  //alternatively, get the length of the array, and add that value to pizza cost
+
 
 // user interface logic
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
 
-    userSize = $("input:radio[name=size]:checked").val();
-    userCheese = $("input:radio[name=cheese]:checked").val();
+    userSize = parseInt($("input:radio[name=size]:checked").val());
+    userCheese = parseInt($("input:radio[name=cheese]:checked").val());
     userToppings = $("input:checkbox:checked").map(function() {
       return this.value;
     }).get();
 
     var yourPizza = new Pizza(userSize, userCheese, userToppings);
 
+
+    yourPizza.toppingsSum();
 
   });
 });
