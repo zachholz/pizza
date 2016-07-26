@@ -9,98 +9,103 @@
     <title>Order a Vegan Pizza</title>
   </head>
   <body>
-    <h1>Do The Right Thing Pizza</h1>
-    <h2>Serving up cruelty-free vegan pizza since 2016.</h2>
-    <h3>Check out our ingredient selector to customize your pizza before you order!</h3>
-    <h3>Build Your Pizza</h3>
-    <form>
-      <!-- size selectors -->
-      <div class="radio">
-        <label>
-          <input type="radio" name="petite" id="xs" value="xs">
-          Petite
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="smallish" id="s" value="s">
-          Smallish
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="middling" id="m" value="m">
-          Middling
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="pretty-big" id="l" value="l">
-          Pretty Big
-        </label>
-      </div>
-      <!-- vegan cheese selectors -->
-      <div class="radio">
-        <label>
-          <input type="radio" name="miyoko" id="miyoko" value="miyoko">
-          Miyoko's <a href="http://shop.miyokoskitchen.com/products/fresh-buffalo-style-mozzarella-cheese?variant=5781995395">vegan mozz</a>. It's pretty great.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="daiya" id="daiya" value="daiya">
-          Daiya. For you old school vegans.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="cashew" id="cashew" value="cashew">
-          Housemade cashew cheese. It's bomb.
-        </label>
-      </div>
-      <!-- toppings -->
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" value="">
-          Seitan sausage
-        </label>
-      </div>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" value="">
-          Mix of mushrooms (crimini, shitake, oyster)
-        </label>
-      </div>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" value="">
-          Finely chopped olives
-        </label>
-      </div>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" value="">
-          Artichoke hearts
-        </label>
-      </div>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" value="">
-          Roma tomatoes
-        </label>
-      </div>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" value="">
-          Kale.
-        </label>
-      </div>
-      <!-- submit button -->
+    <div class="container">
+      <h1>Do The Right Thing Pizza</h1>
+      <h2>Serving up cruelty-free vegan pizza since 2016.</h2>
+      <h3>Check out our ingredient selector to customize your pizza before you order!</h3>
+      <h3>Build Your Pizza</h3>
+      <form>
+        <!-- size selectors -->
+        <h4>Choose your size:</h4>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" id="xs" value="xs">
+            Petite - $6
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" id="s" value="s">
+            Smallish - $8
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" id="m" value="m">
+            Middling - $11
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" id="l" value="l">
+            Pretty Big - $13
+          </label>
+        </div>
+        <!-- vegan cheese selectors -->
+        <h4>Choose your vegan cheese:</h4>
+        <div class="radio">
+          <label>
+            <input type="radio" name="cheese" id="miyoko" value="miyoko">
+            Miyoko's <a href="http://shop.miyokoskitchen.com/products/fresh-buffalo-style-mozzarella-cheese?variant=5781995395">vegan mozz</a>. It's pretty great. - $3
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="cheese" id="daiya" value="daiya">
+            Daiya. For you old school vegans. - $2
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="cheese" id="cashew" value="cashew">
+            Housemade cashew cheese. It's bomb. - $1
+          </label>
+        </div>
+        <!-- toppings -->
+        <h4>Choose your toppings. $1 each.</h4>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="1">
+            Seitan sausage
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="1">
+            Mix of mushrooms (crimini, shitake, oyster)
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="1">
+            Finely chopped olives
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="1">
+            Artichoke hearts
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="1">
+            Roma tomatoes
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="1">
+            Kale.
+          </label>
+        </div>
+        <!-- submit button -->
+        <input class="btn btn-default btn-block" type="submit" value="Submit">
+      </form>
+      <!-- order output -->
+      <div class="your-order">
 
-    </form>
-    <!-- order output -->
-    <div class="your-order">
-
+      </div>
     </div>
   </body>
 </html>
