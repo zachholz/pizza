@@ -21,7 +21,7 @@ Pizza.prototype.toppingsSum = function(topping) {
 }
 
 Pizza.prototype.totalPizzaCost = function(sizes, cheese, toppings) {
-  return finalPizzaCost = this.sizes + this.cheese + pizzaCost
+  return finalPizzaCost = this.sizes + this.cheese + pizzaCost;
 }
 
 // user interface logic
@@ -29,9 +29,9 @@ $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
 
-    userSize = parseInt($("input:radio[name=size]:checked").val());
-    userCheese = parseInt($("input:radio[name=cheese]:checked").val());
-    userToppings = $("input:checkbox:checked").map(function() {
+    var userSize = parseInt($("input:radio[name=size]:checked").val());
+    var userCheese = parseInt($("input:radio[name=cheese]:checked").val());
+    var userToppings = $("input:checkbox:checked").map(function() {
       return this.value;
     }).get();
 
@@ -40,5 +40,7 @@ $(document).ready(function() {
     yourPizza.toppingsSum();
     yourPizza.totalPizzaCost();
 
+    $("#your-order").show();
+    $(".cost").text(finalPizzaCost);
   });
 });
