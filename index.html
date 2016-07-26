@@ -14,18 +14,93 @@
     <h3>Check out our ingredient selector to customize your pizza before you order!</h3>
     <h3>Build Your Pizza</h3>
     <form>
+      <!-- size selectors -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="petite" id="xs" value="xs">
+          Petite
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="smallish" id="s" value="s">
+          Smallish
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="middling" id="m" value="m">
+          Middling
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="pretty-big" id="l" value="l">
+          Pretty Big
+        </label>
+      </div>
+      <!-- vegan cheese selectors -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="miyoko" id="miyoko" value="miyoko">
+          Miyoko's <a href="http://shop.miyokoskitchen.com/products/fresh-buffalo-style-mozzarella-cheese?variant=5781995395">vegan mozz</a>. It's pretty great.
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="daiya" id="daiya" value="daiya">
+          Daiya. For you old school vegans.
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="cashew" id="cashew" value="cashew">
+          Housemade cashew cheese. It's bomb.
+        </label>
+      </div>
+      <!-- toppings -->
       <div class="checkbox">
         <label>
           <input type="checkbox" value="">
-          Option one is this and that&mdash;be sure to include why it's great
+          Seitan sausage
         </label>
       </div>
-      <div class="checkbox disabled">
+      <div class="checkbox">
         <label>
           <input type="checkbox" value="">
-          Option two is disabled
+          Mix of mushrooms (crimini, shitake, oyster)
         </label>
       </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="">
+          Finely chopped olives
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="">
+          Artichoke hearts
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="">
+          Roma tomatoes
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="">
+          Kale.
+        </label>
+      </div>
+      <!-- submit button -->
+
     </form>
+    <!-- order output -->
+    <div class="your-order">
+
+    </div>
   </body>
 </html>
