@@ -24,6 +24,11 @@ Pizza.prototype.totalPizzaCost = function(sizes, cheese, toppings) {
   return finalPizzaCost = this.sizes + this.cheese + pizzaCost;
 }
 
+// reset fields
+function resetFields() {
+  $("#pizza-choices").val("");
+}
+
 // user interface logic
 $(document).ready(function() {
   $("form").submit(function(event) {
@@ -42,5 +47,7 @@ $(document).ready(function() {
 
     $("#your-order").show();
     $(".cost").text(finalPizzaCost);
+
+    resetFields();
   });
 });
